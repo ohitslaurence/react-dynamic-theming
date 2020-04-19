@@ -8,13 +8,15 @@ module.exports = {
         positive: 'var(--color-positive)',
         'primary-background': 'var(--background-primary)',
         'sec-background': 'var(--background-sec)',
-        'text-primary': 'var(--color-text-primary)',
+        'primary-text': 'var(--color-text-primary)',
       },
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),
     }),
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['active'],
+  },
   plugins: [],
 };

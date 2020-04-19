@@ -1,5 +1,6 @@
 {
   "name": "react-dynamic-theming",
+  "author": "ljdavies <ljd.davies@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "prestart": "postcss src/css/app.css -o src/App.css",
+    "prebuild": "postcss src/css/app.css -o src/App.css --env production",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
