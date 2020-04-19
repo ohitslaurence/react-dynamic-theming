@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { DEFAULT_THEME } from './themes';
+import { applyTheme } from './themes/utils';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    applyTheme(DEFAULT_THEME);
+  }, []);
+
   return (
-    <div className='App bg-red-900'>
+    <div className='App bg-primary-background'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>

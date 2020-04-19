@@ -4,6 +4,6 @@ export default {
   negative: '#e45b78',
   positive: '#A3D9B1',
   textPrimary: '#333',
-  backgroundPrimary: '#fff',
+  backgroundPrimary: '#efefef',
   backgroundSecondary: '#F6F9FC',
 };
